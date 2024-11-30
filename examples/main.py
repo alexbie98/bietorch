@@ -20,13 +20,13 @@ def main() -> None:
   print(a.grad)
 
   print('z graph:')
-  bt.utils.print_graph(z)
+  bt.print_graph(z)
 
   print('running z.backward()')
   z.backward()
 
   print('z graph:')
-  bt.utils.print_graph(z)
+  bt.print_graph(z)
 
   print('a.grad:')
   print(a.grad)
